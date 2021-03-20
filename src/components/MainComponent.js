@@ -9,14 +9,14 @@ import Contact from './ContactComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-const mapStateToProps = state => 
+const mapStateToProps = state => {
   return {
       campsites: state.campsites,
       comments: state.comments,
       partners: state.partners,
       promotions: state.promotions
-  }
-}
+  };
+};
 class Main extends Component {
 
   render() {
@@ -56,4 +56,4 @@ class Main extends Component {
   }
 }
  
-export default withRouter(connect(mapStateToProps)(Main);
+export default withRouter(connect(mapStateToProps)(Main));
