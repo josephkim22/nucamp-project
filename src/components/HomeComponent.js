@@ -33,7 +33,7 @@ function Home(props) {
         <div className="container">
             <div className="row">
                 <div className="col-md m-1">
-                    <RenderCard item={props.campsite}
+                    <RenderCard 
                         item={props.campsite}
                         isLoading={props.campsitesLoading}
                         errMess={props.campsitesErrMess}
